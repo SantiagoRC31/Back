@@ -2,7 +2,7 @@ require("dotenv").config();
 const { Sequelize } = require("sequelize");
 const fs = require("fs");
 const path = require("path");
-const { DB_PASSWORD } = process.env;
+const { DB_PASSWORD  } = process.env;
 
 const sequelize = new Sequelize(
   `postgres://postgres:${DB_PASSWORD}@localhost/automovil`,
